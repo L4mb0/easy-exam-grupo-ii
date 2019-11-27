@@ -6,9 +6,9 @@ import com.easyexam.model.aux.ExamCompleted;
 import com.easyexam.service.IExamService;
 import com.easyexam.service.impl.ProblemServiceImpl;
 import com.easyexam.service.implOthers.IFileService;
-import de.nixosoft.jlr.JLRConverter;
+/*import de.nixosoft.jlr.JLRConverter;
 import de.nixosoft.jlr.JLRGenerator;
-import de.nixosoft.jlr.JLROpener;
+import de.nixosoft.jlr.JLROpener;*/
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,7 +52,7 @@ public class ExamController {
 
         return new ApiResponse<>(200, "success", idExam);
     }
-
+/*
     @GetMapping("/generateExam")
     public void generateExam(int idExam,int idTeacher,HttpServletResponse response) throws IOException {
         LOG.info("Entro a generate Exam");
@@ -113,7 +113,7 @@ public class ExamController {
     @GetMapping("/exam/getExams")
     public List<Exam> getExams(int idTeacher) throws AuthenticationException{
         return examService.getExamsByTeacher(idTeacher);
-    }
+    }*/
 
 
 }

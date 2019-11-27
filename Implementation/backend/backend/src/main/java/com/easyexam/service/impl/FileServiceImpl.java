@@ -4,7 +4,7 @@ import com.easyexam.controller.ExamController;
 import com.easyexam.model.*;
 import com.easyexam.repository.*;
 import com.easyexam.service.implOthers.IFileService;
-import de.nixosoft.jlr.JLRGenerator;
+//import de.nixosoft.jlr.JLRGenerator;
 import net.bytebuddy.asm.Advice;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,7 +37,7 @@ public class FileServiceImpl implements IFileService {
 
     @Autowired
     ITeacherRepo teacherRepo;
-
+/*
     public void generateLatex(String name,int idExam,int idTeacher) throws IOException {
         LOG.info("entro a generate Latex");
         Exam e=examRepo.findExamById(idExam);
@@ -146,5 +146,5 @@ public class FileServiceImpl implements IFileService {
         //JLROpener.open(pdfGen.getPDF());
 
     }
-
+*/
 }
